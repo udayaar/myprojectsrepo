@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="226" it="0" lt="226" ts="1469015514530" s="true" lb="WordCount" rc="200" rm="OK" tn="Read_And_Response 1-1" dt="text" de="" by="327" sc="1" ec="0" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=6F4D75C7FD7157B967333776E3021591; Path=/readandresponse/; HttpOnly
+Content-Type: application/json
+Content-Length: 100
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Content-Length: 71
+Connection: keep-alive
+Content-Type: application/json
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;counts&quot;:[{&quot;Duis&quot;:&quot;11&quot;},{&quot;Sed&quot;:&quot;16&quot;},{&quot;Donec&quot;:&quot;8&quot;},{&quot;Augue&quot;:&quot;7&quot;},{&quot;Pellentesque&quot;:&quot;6&quot;},{&quot;123&quot;:&quot;0&quot;}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;searchText&quot;:[&quot;Duis&quot;, &quot;Sed&quot;, &quot;Donec&quot;, &quot;Augue&quot;, &quot;Pellentesque&quot;, &quot;123&quot;]}</queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/search</java.net.URL>
+</httpSample>
+<httpSample t="5" it="0" lt="5" ts="1469015514759" s="false" lb="WordCount_Invalid_Authentication" rc="401" rm="Unauthorized" tn="Read_And_Response 1-1" dt="text" de="utf-8" by="1217" sc="1" ec="1" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Server: Apache-Coyote/1.1
+WWW-Authenticate: Basic realm=&quot;Spring Security Application&quot;
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 981
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Content-Length: 71
+Connection: keep-alive
+Content-Type: application/json
+</requestHeader>
+  <responseData class="java.lang.String">&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/7.0.55 - Error report&lt;/title&gt;&lt;style&gt;&lt;!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--&gt;&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 401 - Bad credentials&lt;/h1&gt;&lt;HR size=&quot;1&quot; noshade=&quot;noshade&quot;&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;Bad credentials&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;This request requires HTTP authentication.&lt;/u&gt;&lt;/p&gt;&lt;HR size=&quot;1&quot; noshade=&quot;noshade&quot;&gt;&lt;h3&gt;Apache Tomcat/7.0.55&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;searchText&quot;:[&quot;Duis&quot;, &quot;Sed&quot;, &quot;Donec&quot;, &quot;Augue&quot;, &quot;Pellentesque&quot;, &quot;123&quot;]}</queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/search</java.net.URL>
+</httpSample>
+<httpSample t="13" it="0" lt="13" ts="1469015514766" s="true" lb="TopWordsCount_Twenty" rc="200" rm="OK" tn="Read_And_Response 1-1" dt="text" de="" by="369" sc="1" ec="0" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=F8B9AE0BC18F807815319FF651D89B37; Path=/readandresponse/; HttpOnly
+Content-Type: text/csv
+Content-Length: 150
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">vel|17
+eget|17
+sed|16
+in|15
+et|14
+ut|13
+eu|13
+id|12
+ac|12
+metus|12
+sit|12
+amet|12
+nulla|12
+at|11
+ipsum|11
+duis|11
+nec|11
+vitae|11
+dolor|10
+aliquam|10
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/top/20</java.net.URL>
+</httpSample>
+<httpSample t="6" it="0" lt="6" ts="1469015514780" s="true" lb="TopWordsCount_Five" rc="200" rm="OK" tn="Read_And_Response 1-1" dt="text" de="" by="252" sc="1" ec="0" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=64D202F36923674D1BC179EBDBDB0E40; Path=/readandresponse/; HttpOnly
+Content-Type: text/csv
+Content-Length: 34
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">vel|17
+eget|17
+sed|16
+in|15
+et|14
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/top/5</java.net.URL>
+</httpSample>
+<httpSample t="3" it="0" lt="3" ts="1469015514787" s="false" lb="TopWordsCount_Invalid_Authentication" rc="401" rm="Unauthorized" tn="Read_And_Response 1-1" dt="text" de="utf-8" by="1217" sc="1" ec="1" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Server: Apache-Coyote/1.1
+WWW-Authenticate: Basic realm=&quot;Spring Security Application&quot;
+Content-Type: text/html;charset=utf-8
+Content-Language: en
+Content-Length: 981
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/7.0.55 - Error report&lt;/title&gt;&lt;style&gt;&lt;!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--&gt;&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 401 - Bad credentials&lt;/h1&gt;&lt;HR size=&quot;1&quot; noshade=&quot;noshade&quot;&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;Bad credentials&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;This request requires HTTP authentication.&lt;/u&gt;&lt;/p&gt;&lt;HR size=&quot;1&quot; noshade=&quot;noshade&quot;&gt;&lt;h3&gt;Apache Tomcat/7.0.55&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/top/20</java.net.URL>
+</httpSample>
+<httpSample t="7" it="0" lt="7" ts="1469015514791" s="true" lb="retrieveSampleFile" rc="200" rm="OK" tn="Read_And_Response 1-1" dt="text" de="" by="6433" sc="1" ec="0" ng="1" na="1" hn="01HW924511">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID=053D0CCF4036660DAF4553DF5A072DD9; Path=/readandresponse/; HttpOnly
+Content-Type: text/html
+Content-Length: 6212
+Date: Wed, 20 Jul 2016 11:51:54 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">&lt;HTML&gt;&lt;HEAD&gt;&lt;BODY&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed suscipit metus, sit amet tristique purus. Etiam sit amet leo sollicitudin, tincidunt lectus vel, ultricies mauris. Donec ultrices lorem in est eleifend, et feugiat libero semper. Duis sodales gravida sapien eget efficitur. Ut mattis mollis blandit. Duis nec metus gravida, posuere dolor id, pretium urna. Aliquam vitae purus ex. Etiam vitae ipsum leo. Integer blandit, arcu eget commodo scelerisque, risus leo aliquet diam, in sagittis metus ex sed elit. Duis vel urna non est fringilla rutrum. Ut molestie sed risus in pharetra. Maecenas eget ante at nulla feugiat euismod. Suspendisse pharetra porttitor lacus non tristique.&lt;br/&gt;Vivamus varius posuere ligula. Nullam magna metus, elementum vel elementum eu, elementum non magna. Ut cursus arcu vel ligula mollis, in interdum velit maximus. Pellentesque arcu lorem, porttitor et quam vitae, imperdiet venenatis magna. Etiam imperdiet erat vel lectus rhoncus sollicitudin. Praesent at mi a est suscipit tempor sed eu diam. In hac habitasse platea dictumst. Morbi erat mi, iaculis id hendrerit a, sollicitudin et ligula. Vivamus justo nibh, cursus at ultricies sed, varius iaculis enim.&lt;br/&gt;Donec consequat luctus sapien, quis aliquam ante tristique sit amet. Pellentesque accumsan sollicitudin mi a blandit. Donec ac dui bibendum, pharetra nulla vitae, iaculis purus. Donec fermentum porttitor mollis. Mauris cursus fringilla ex, eget ullamcorper ipsum lacinia in. Nam eget vehicula dui. In eget turpis convallis, ultrices neque vitae, interdum turpis. Nullam non aliquam sapien, eget volutpat elit. Cras pharetra ex a orci faucibus tristique at ullamcorper nibh. Proin nec lacinia ante, eu rutrum sem.&lt;br/&gt;Curabitur id libero purus. Vivamus vel velit turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec at urna eget augue efficitur porttitor at eu elit. Fusce feugiat tempor nulla, at euismod lacus tincidunt sed. Curabitur ullamcorper dignissim nisl, eget iaculis orci vestibulum sed. Ut consectetur consectetur urna vestibulum ultricies. Maecenas non felis arcu. Fusce in tortor metus. Vestibulum vel felis ut lorem ultricies pretium quis ut metus. Aliquam erat volutpat. Praesent a lorem porttitor, venenatis nisl volutpat, placerat dui. Vivamus ut justo eu orci tincidunt malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam facilisis nulla vel leo pretium varius.&lt;br/&gt;Fusce eleifend tincidunt lacinia. Duis maximus, sapien ac fringilla pretium, augue leo aliquam ligula, quis rutrum leo sem vel magna. Duis commodo lobortis dui, ut rhoncus dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec augue augue. Quisque eu orci arcu. Aliquam neque odio, eleifend a dolor sed, dapibus auctor justo. Aliquam sollicitudin arcu sit amet odio gravida, nec viverra nulla efficitur. Phasellus sed libero rutrum lacus sollicitudin mattis. Sed fermentum sapien ac dolor elementum, quis vehicula sem tempus.&lt;br/&gt;Etiam et orci non orci lobortis dictum id vitae massa. Aenean eu erat nulla. Sed posuere ullamcorper magna, tempor ultrices justo feugiat rhoncus. Cras fringilla ligula nec euismod tristique. Duis vitae enim eget augue consectetur ultricies. Nam laoreet sapien at dictum consectetur. Suspendisse tristique purus neque, ut blandit nunc tincidunt et.&lt;br/&gt;Duis pretium condimentum diam id viverra. Pellentesque sit amet dapibus eros, ac auctor lectus. Praesent eget tellus purus. Proin vel nisl sit amet orci laoreet faucibus eget eu nisi. Nulla id pharetra arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare lectus eu metus venenatis, quis porttitor nibh convallis. Nulla nunc metus, tristique quis dui sed, interdum imperdiet nisl. Vestibulum mattis tincidunt lacus, imperdiet mattis libero varius rhoncus. Nam in auctor nisl. Nunc tincidunt accumsan pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris luctus scelerisque augue, vel finibus ligula semper vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ultricies vel nunc eget mollis.&lt;br/&gt;Donec ligula felis, ultrices vel blandit ut, hendrerit vel turpis. Duis faucibus dapibus mi ac semper. Duis id tortor tempus augue euismod tempus. Integer vehicula velit ut leo blandit sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut urna vel metus molestie venenatis nec non dui. Integer diam metus, aliquam a gravida et, varius id nulla. Nunc non porttitor ipsum. Aliquam sapien enim, eleifend nec nunc id, tempus tempus ex. Vivamus nec urna ornare, finibus leo at, posuere urna. Aenean est mi, porta ac gravida at, hendrerit quis elit. Quisque urna mauris, lobortis sit amet tortor eget, laoreet consectetur tortor. Suspendisse id imperdiet nisl, eget pellentesque tortor. Maecenas sit amet mi et ex ornare porta sollicitudin vitae tellus. Donec nulla lorem, imperdiet non sodales vitae, congue quis sapien. Quisque nec mattis lacus. Sed dapibus nisi nec libero ornare, in accumsan dolor porttitor. Praesent sodales commodo ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras id ipsum vestibulum, venenatis eros vitae, maximus magna. Mauris eu blandit tortor, condimentum eleifend dolor.&lt;br/&gt;Cras eu tellus feugiat, lobortis metus ac, consectetur orci. Phasellus bibendum tincidunt massa non venenatis. Nunc sed molestie metus, vel elementum tortor. Duis malesuada porta nisl ac molestie. In a tellus faucibus, convallis nunc nec, sodales lacus. Donec vulputate interdum massa sed posuere. In dapibus eu ligula at sodales. Sed facilisis a sem eget lobortis. Ut viverra ipsum dictum pharetra auctor. Duis tincidunt nulla sapien, sit amet facilisis ante rhoncus eu. Aliquam luctus dolor tortor, vitae interdum felis elementum eget. Nam mattis leo gravida ex elementum, id facilisis lacus ornare.&lt;br/&gt;&lt;/p&gt;&lt;/BODY&gt;&lt;/HEAD&gt;&lt;/HTML&gt;</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://localhost:8080/readandresponse/counter-api/retrieveSampleFile</java.net.URL>
+</httpSample>
+
+</testResults>
